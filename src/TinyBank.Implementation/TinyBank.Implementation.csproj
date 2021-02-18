@@ -12,4 +12,12 @@
     <ProjectReference Include="..\TinyBank.Interfaces\TinyBank.Interfaces.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TinyBank.Types\TinyBank.Types.csproj" />
+  </ItemGroup>
+  
 </Project>
