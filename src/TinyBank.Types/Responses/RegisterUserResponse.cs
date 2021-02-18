@@ -6,8 +6,8 @@ namespace TinyBank.Types.Responses
     [DataContract]
     public class RegisterUserResponse
     {
-        [DataMember(Name = "isCreated")]
-        [JsonPropertyName("isCreated")]
-        public bool IsCreated { get; set; }
+        [DataMember(Name = "isRegistered")]
+        [JsonPropertyName("isRegistered")]
+        public bool IsRegistered { get; set; }
     }
 }
