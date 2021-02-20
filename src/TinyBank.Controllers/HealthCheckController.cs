@@ -13,7 +13,7 @@ namespace TinyBank.Controllers
         [HttpGet]
         public IActionResult HealthCheck(GenericRequest request)
         {
-            return Content("The ASP.NET Core Api is running!");
+            return Content("Hi "+ request.UserName + ". Welcome to TinyBank API. The ASP.NET Core Api is running!");
         }
     }
 }

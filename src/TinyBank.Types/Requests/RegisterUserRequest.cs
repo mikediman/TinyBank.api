@@ -6,13 +6,9 @@ namespace TinyBank.Types.Requests
     [DataContract]
     public class RegisterUserRequest : GenericRequest
     {
-        [DataMember(Name = "isExcel")]
-        [JsonPropertyName("isExcel")]
-        public bool IsExcel { get; set; }
-
-        [DataMember(Name = "vatNumber")]
-        [JsonPropertyName("vatNumber")]
-        public string VatNumber { get; set; }
+        [DataMember(Name = "nino")]
+        [JsonPropertyName("nino")]
+        public string Nino { get; set; }
 
         [DataMember(Name = "email")]
         [JsonPropertyName("email")]

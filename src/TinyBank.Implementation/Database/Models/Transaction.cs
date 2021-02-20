@@ -7,6 +7,8 @@ namespace TinyBank.Implementation.Database.Models
     {
         public Guid TransactionId { get; set; }
         public Guid CustomerId { get; set; }
-        public TransactionCategory TransactionCategory { get; set; }
+        public string Nino { get; set; }
+        public DateTime TransactionDate { get; set; }
+        public string TransactionCategory { get; set; }
     }
 }

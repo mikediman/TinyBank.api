@@ -9,9 +9,8 @@ namespace TinyBank.Implementation.Database.Models
         public Guid CustomerId { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }
-        public string VatNumber { get; set; }
-        public List<Account> Accounts { get; set; }
-        public List<Transaction> Transactions { get; set; }
-        public CustomerCategory CustomerCategory { get; set; }
+        public string Nino { get; set; }
+        public DateTime TransactionDate { get; set; }
+        public string CustomerCategory { get; set; }
     }
 }

@@ -15,8 +15,12 @@ namespace TinyBank.Implementation.Database
             modelBuilder.Entity<Customer>()
                 .ToTable("Customer");
 
-            modelBuilder.Entity<Account>()
-                .ToTable("Account");
+            modelBuilder.Entity<Customer>()
+                .HasIndex(c => c.Nino)
+                .IsUnique();
+
+            //modelBuilder.Entity<Account>()
+            //    .ToTable("Account");
 
             modelBuilder.Entity<Transaction>()
                 .ToTable("Transaction");
