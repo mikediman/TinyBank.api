@@ -22,6 +22,7 @@ namespace TinyBank.Tests
             serviceCollection.AddAppServices(config);
 
             Scope = serviceCollection
+                .AddLogging()
                 .BuildServiceProvider()
                 .CreateScope();
         }
